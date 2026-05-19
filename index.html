@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monolith</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <p>
+            Primero seleccione o arrastre los PDF y luego de click en <br>
+            "Procesar PDFs"
+           
+        </p>
+
+        <div id="dropZone">
+            Arrastra PDFs aquí
+        </div>
+
+        <input
+            type="file"
+            id="pdfInput"
+            multiple
+            accept=".pdf"
+            hidden
+        >
+
+        <button id="selectBtn">
+            Seleccionar PDFs
+        </button>
+
+        <button id="processBtn">
+            Procesar PDFs
+        </button>
+
+        <div id="fileList"></div>
+
+        <div id="status"></div>
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
